@@ -47,6 +47,21 @@ def insert_elec_car():
 
     con.commit()
 
-insert_elec_car()
+# insert_elec_car()
 
+def insert_charger_car():
+    con = pymysql.connect(host='192.168.0.95', user='team4', passwd='Encore_team4@', port=3306, database='team4')
+    cursor = con.cursor()
+    sql = "insert into nation_elec_car_charger (region, cnt) values (%s, %s)"
+    for x in os.listdir('./data'):
+        if x.endswith("charge_car.csv"):        
+            print(x)
+            df = pd.read_csv(f'./data/{x}')
+            print(df.head())
+            for col in df.columns:
+                print(col, df[col].values[0])
+                cursor.execute(sql, [col, df[col].values[0]]) 
 
+    con.commit()
+
+# insert_charger_car()
