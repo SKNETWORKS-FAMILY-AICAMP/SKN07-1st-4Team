@@ -5,7 +5,7 @@ import urllib
 import json
 
 def crawl_car_repair_shop():
-    hyun_repair_shop_url = 'https://www.car365.go.kr/web/program/ecrepairshopData.do?machineCode=1&menutype=3&entrpsnm=%ED%98%84%EB%8C%80&region=all&sigungu=&repairrange=&searchstr='
+    hyun_repair_shop_url = ''
 
     # enterp = urllib.parse.quote('현대')
     # print(enterp)
@@ -18,7 +18,7 @@ def crawl_car_repair_shop():
     for x in car_enterp_name_list:
         one_enterp_list = []
         enterp = urllib.parse.quote(x)
-        r = requests.get(f'https://www.car365.go.kr/web/program/ecrepairshopData.do?machineCode=1&menutype=3&entrpsnm={enterp}&region=all&sigungu=&repairrange=&searchstr=')
+        r = requests.get(f'')
     
         r_json = r.json()
         
