@@ -78,7 +78,7 @@ def main():
 
     my_choice = st.selectbox('차트를 선택하시오', question)
 
-    st.text( '{}대한 정보입니다.'.format(my_choice) )
+    st.text( '{} 대한 정보입니다.'.format(my_choice) )
 
     if my_choice == question[0] :
         # st.text('지역별 충전소 개수')
@@ -142,13 +142,15 @@ def main():
         print(elec_car_reg_region_df)
         fig5, ax = plt.subplots()
         
-        plt.xticks(rotation=90)  
+        # plt.xticks(rotation=90)  
         plt.bar( elec_car_reg_region_df[3], elec_car_reg_region_df[2], color='green')        
         st.pyplot(fig5)
 
     
     elif my_choice == question[2]:
         fig5, ax = plt.subplots()
+
+        print(charge_car_ratio.sort_values(['region'], inplace=True))
 
         plt.title('지역별 차충기')
         xs=charge_car_ratio['region'].to_list()
@@ -168,7 +170,7 @@ def main():
         print(car_repairshop.head())
         fig6, ax = plt.subplots()
         
-        plt.xticks(rotation=90)  
+        # plt.xticks(rotation=90)  
         plt.bar(car_repairshop['지역'], car_repairshop['정비소'], color='cyan')        
         st.pyplot(fig6)
 
