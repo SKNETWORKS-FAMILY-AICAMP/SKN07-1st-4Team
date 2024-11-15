@@ -36,7 +36,7 @@ def load_pickle():
 
 @st.cache_data
 def load_data():
-    con = pymysql.connect(host='192.168.0.95', user='team4', passwd='Encore_team4@', port=3306, database='team4')
+    con = pymysql.connect(host='192.168.0.95', user='team4', passwd='', port=3306, database='team4')
     cursor = con.cursor()
     
     sql1 = "select * from nation_elec_car_charger"
