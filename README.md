@@ -12,7 +12,7 @@
 
   ![alt text](img1.png)
 
-하지만 높은 판매량에 비해, 전기차 이용자들의 애로사항은 증가하고 있습니다. 'EV Trend Korea 2024' 설문조사 결과에 따르면 실제 전기차 이용자들의 불만사항 1,2위는 전기차 충전에 관한 내용임을 확인할 수 있습니다. 이에 따라, 국내 권역을 기준으로 전기차 등록대수, 차충비, 정비업체 등 다양한 데이터 분석을 통해 급증하는 전기차 수요 대비 현 실상에 대한 인사이트를 제공합니다.
+하지만 높은 판매량에 비해, 전기차 이용자들의 애로사항은 증가하고 있습니다. 'EV Trend Korea 2024' 설문조사 결과에 따르면 실제 전기차 이용자들의 불만사항 1,2위는 전기차 충전에 관한 내용임을 확인할 수 있습니다. 이에 따라, 국내 권역을 기준으로 전기차 등록대수, 차충비, 정비업체 등 다양한 데이터 분석을 통해 급증하는 전기차 수요 대비 현 실상에 대한 분석 결과를 제공합니다.
 </br>
 <br>
 
@@ -37,8 +37,21 @@
 <img src="ERD.png" width="450" height="600"/>
 <br>
 
-## 5. UI Prototype  
-* **메인페이지**
+## 5. 결과 화면 
+* **지역 별 차충기**
+<img src="./image/region_charger_ratio.png" width="400" height="400"/>
+
+* **지역 별 충전소**
+<img src="./image/region_charger.png" width="400" height="400"/>
+
+* **지역 별 전기차 등록 대수**
+<img src="./image/region_eleccar.png" width="400" height="400"/>
+
+* **지역 별 전기차 정비소**
+<img src="./image/region_repair.png" width="400" height="400"/>
+
+* **브랜드 별 전기차 정비소**
+<img src="./image/brand_repair.png" width="400" height="400"/>
 <br>
 
 ## 6. 디렉토리 구조
